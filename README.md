@@ -1,14 +1,26 @@
-# imlh-icml-detection-tools
+# Detection tools for IMLH-ICML 2023
 
 Copyright © German Cancer Research Center (DKFZ), [Division of Medical Image Computing (MIC)](https://www.dkfz.de/en/mic/index.php). Please make sure that your usage of this code is in compliance with the code [license](./LICENSE). 
 
 -----
 
-Requires [nndetection](https://github.com/MIC-DKFZ/nnDetection) to run.
-
-* Adaptation to focal loss is in `nndet/`. This files should be added/replaced in regular version of nndetection and are then used during training. It also needs changes to the nndetection yaml configuration
+This repository contains code required to run risk-adjusted training and evaluation. It is complementary to the following work, accepted at ICML-IMLH 2023:
 
 ```
+Risk-adjusted Training and Evaluation for Medical Object Detection in Breast Cancer MRI, Bounias et al., Workshop on Interpretable ML in Healthcare at International Conference on Machine Learning (ICML), Honolulu, Hawaii, USA. 2023.
+```
+
+The code is meant to allow introducing risk functions into the calculations of medical object detection (currently through usage of object size), both in training (by adaptation of focal loss) and during evaluation (by adaptation of the FROC metric). It is still work-in-progress.
+
+Requires [nndetection](https://github.com/MIC-DKFZ/nnDetection) to run.
+
+* **Adaptation to loss** is in `nndet/`. This folder should be added/replaced in regular version of nndetection (root directory) and are then used during training. It also needs changes to the nndetection yaml configuration:
+
+  1. `module` should be replaced with `RetinaUNetC011FocalSA`.
+
+  2. The following should be added to the `head_kwargs` key:
+
+  ```
   head_kwargs: # keyword arguments to passed to head
     size_aware_loss_config: # SA
       size_method_name: 'max-axial-diameter'
@@ -26,6 +38,6 @@ Requires [nndetection](https://github.com/MIC-DKFZ/nnDetection) to run.
       size_to_weight_combine:
       - name: 'breast-mortality-risk-sopik'
         config: {}
-```
+  ```
 
-* Adaptation to metric is in `scripts/` (`SA_FROC5_runner.py`). It is a regular script meant to run independently of nndetection. Requires extra package `pillow`. For config in the argument choose `erlangen_mort_sopik_mad`.
+* **Adaptation to metric** is in `scripts/` (`SA_FROC5_runner.py`). It is a regular script meant to run independently of nndetection. Requires extra package `pillow`. For config in the argument choose `erlangen_mort_sopik_mad`.
