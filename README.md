@@ -1,5 +1,9 @@
 # imlh-icml-detection-tools
 
+Copyright © German Cancer Research Center (DKFZ), [Division of Medical Image Computing (MIC)](https://www.dkfz.de/en/mic/index.php). Please make sure that your usage of this code is in compliance with the code [licenses](LICENSES/). 
+
+-----
+
 * Adaptation to focal loss is in `nndet/`. This files should be added/replaced in regular version of nndetection and are then used during training. It also needs changes to the nndetection yaml configuration
 
 ```
