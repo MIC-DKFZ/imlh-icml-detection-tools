@@ -4,6 +4,8 @@ Copyright © German Cancer Research Center (DKFZ), [Division of Medical Image Co
 
 -----
 
+Requires [nndetection](https://github.com/MIC-DKFZ/nnDetection) to run.
+
 * Adaptation to focal loss is in `nndet/`. This files should be added/replaced in regular version of nndetection and are then used during training. It also needs changes to the nndetection yaml configuration
 
 ```
@@ -12,7 +14,7 @@ Copyright © German Cancer Research Center (DKFZ), [Division of Medical Image Co
       size_method_name: 'max-axial-diameter'
       x_training_spacing: 1.4 # replace with your data
       y_training_spacing: 1.4 # replace with your data
-      z_training_spacing: 2,0 # replace with your data
+      z_training_spacing: 2.0 # replace with your data
       target_class: 0 # replace with your target class
       target_weight_if_available: True # only for target class
       weigh_fp: True # Whether to apply weighing when the box predicts nothing
