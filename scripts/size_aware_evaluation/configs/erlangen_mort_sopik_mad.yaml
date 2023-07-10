@@ -1,0 +1,6 @@
+size_aware_loss_config: # SA
+  size_method_name: 'max-axial-diameter'
+  max_w: 1.0
+  size_to_weight_combine:
+  - name: 'breast-mortality-risk-sopik'
+    config: {}
