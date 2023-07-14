@@ -2,6 +2,29 @@
 
 Copyright © German Cancer Research Center (DKFZ), [Division of Medical Image Computing (MIC)](https://www.dkfz.de/en/mic/index.php). Please make sure that your usage of this code is in compliance with the code [license](./LICENSE). 
 
+```
+1
+Division of Medical Image Computing (MIC), German Cancer
+2Research Center (DKFZ), Heidelberg, Germany Medical Fac-
+ulty, University of Heidelberg, Heidelberg, Germany 3Faculty
+of Mathematics and Computer Science, University of Heidel-
+4berg, Heidelberg, Germany Helmholtz Imaging, German Can-
+cer Research Center (DKFZ), Heidelberg, Germany 5 German
+Cancer Consortium (DKTK), Partner Site Heidelberg, Germany
+6
+Pattern Analysis and Learning Group, Department of Radiation
+Oncology, Heidelberg University Hospital, Heidelberg, Germany
+7
+Heidelberg Institute of Radiation Oncology (HIRO), National
+Center for Radiation Research in Oncology (NCRO), Heidelberg,
+Germany 8Interactive Machine Learning Group, German Cancer
+Research Center (DKFZ), Heidelberg, Germany 9 Institute of Ra-
+diology, Uniklinikum Erlangen, Friedrich-Alexander-Universität
+10Erlangen-Nürnberg (FAU), Germany National Center for Tumor
+Diseases (NCT), Heidelberg University Hospital (UKHD) and
+German Cancer Research Center (DKFZ), Heidelberg, Germany.
+```
+
 -----
 
 This repository contains code required to run risk-adjusted training and evaluation. It is complementary to the following work, accepted at ICML-IMLH 2023:
