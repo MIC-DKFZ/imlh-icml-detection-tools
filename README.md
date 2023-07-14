@@ -2,10 +2,6 @@
 
 Copyright © German Cancer Research Center (DKFZ), [Division of Medical Image Computing (MIC)](https://www.dkfz.de/en/mic/index.php). Please make sure that your usage of this code is in compliance with the code [license](./LICENSE). 
 
-```
-1 Division of Medical Image Computing (MIC), German Cancer Research Center (DKFZ), Heidelberg, Germany 2 Medical Faculty, University of Heidelberg, Heidelberg, Germany 3 Faculty of Mathematics and Computer Science, University of Heidelberg, Heidelberg, Germany 4 Helmholtz Imaging, German Cancer Research Center (DKFZ), Heidelberg, Germany 5 German Cancer Consortium (DKTK), Partner Site Heidelberg, Germany 6 Pattern Analysis and Learning Group, Department of Radiation Oncology, Heidelberg University Hospital, Heidelberg, Germany 7 Heidelberg Institute of Radiation Oncology (HIRO), National Center for Radiation Research in Oncology (NCRO), Heidelberg, Germany 8 Interactive Machine Learning Group, German Cancer Research Center (DKFZ), Heidelberg, Germany 9 Institute of Radiology, Uniklinikum Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Germany 10 National Center for Tumor Diseases (NCT), Heidelberg University Hospital (UKHD) and German Cancer Research Center (DKFZ), Heidelberg, Germany.
-```
-
 -----
 
 This repository contains code required to run risk-adjusted training and evaluation. It is complementary to the following work, accepted at ICML-IMLH 2023:
@@ -13,6 +9,11 @@ This repository contains code required to run risk-adjusted training and evaluat
 ```
 Risk-adjusted Training and Evaluation for Medical Object Detection in Breast Cancer MRI, Bounias et al., Workshop on Interpretable ML in Healthcare at International Conference on Machine Learning (ICML), Honolulu, Hawaii, USA. 2023.
 ```
+
+```
+1 Division of Medical Image Computing (MIC), German Cancer Research Center (DKFZ), Heidelberg, Germany 2 Medical Faculty, University of Heidelberg, Heidelberg, Germany 3 Faculty of Mathematics and Computer Science, University of Heidelberg, Heidelberg, Germany 4 Helmholtz Imaging, German Cancer Research Center (DKFZ), Heidelberg, Germany 5 German Cancer Consortium (DKTK), Partner Site Heidelberg, Germany 6 Pattern Analysis and Learning Group, Department of Radiation Oncology, Heidelberg University Hospital, Heidelberg, Germany 7 Heidelberg Institute of Radiation Oncology (HIRO), National Center for Radiation Research in Oncology (NCRO), Heidelberg, Germany 8 Interactive Machine Learning Group, German Cancer Research Center (DKFZ), Heidelberg, Germany 9 Institute of Radiology, Uniklinikum Erlangen, Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Germany 10 National Center for Tumor Diseases (NCT), Heidelberg University Hospital (UKHD) and German Cancer Research Center (DKFZ), Heidelberg, Germany.
+```
+
 
 The code is meant to allow introducing risk functions into the calculations of medical object detection (currently through usage of object size), both in training (by adaptation of focal loss) and during evaluation (by adaptation of the FROC metric). It is still work-in-progress.
 
